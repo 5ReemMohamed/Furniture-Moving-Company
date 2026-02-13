@@ -830,7 +830,7 @@ footer p {
     height: 2px;
     background-color: var(--tanspot-base);
     top: 38px;
-    left: 60%;
+    right: 0%;
     content: "";
     position: absolute;
     z-index: -1;
