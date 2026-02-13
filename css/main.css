@@ -864,3 +864,6 @@ footer p {
     color: var(--tanspot-white);
     font-weight: 700;
 }
+.text-orange{
+    color: var(--tanspot-base) !important;
+}
