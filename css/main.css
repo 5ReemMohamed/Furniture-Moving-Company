@@ -409,7 +409,7 @@ ul.check li::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    left: 101%;
+    left: 102%;
     top: 0px;
     background: url(https://html.theme-village.com/transhub/demo/images/icons/arrow-right.svg) 0px center no-repeat;
 }
@@ -854,16 +854,225 @@ footer p {
     text-decoration: none;
     font-weight: 600;
 }
-.footer-widget ul li a:hover{
+
+.footer-widget ul li a:hover {
     color: var(--tanspot-base);
     padding-right: 5px;
     opacity: 1;
     font-weight: 700;
 }
-.contact-widget span{
+
+.contact-widget span {
     color: var(--tanspot-white);
     font-weight: 700;
 }
-.text-orange{
+
+.text-orange {
     color: var(--tanspot-base) !important;
+}
+
+
+
+
+/* Blog Content */
+.blog-content {
+    min-height: calc(100vh - 80px);
+}
+
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.blog-image {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.05);
+}
+
+.blog-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #5e2ced 0%, #a742ea 100%);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.blog-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.post-meta {
+    font-size: 12px;
+    color: #666;
+}
+
+.btn-more {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    padding: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.btn-more:hover {
+    color: #1a1a1a;
+}
+
+.blog-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    text-align: right;
+}
+
+.blog-excerpt {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: right;
+    flex: 1;
+}
+
+.blog-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #666;
+}
+
+.views,
+.comments {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-like {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    margin-right: auto;
+    transition: color 0.3s ease;
+    padding: 5px;
+}
+
+.btn-like:hover {
+    color: #ff6b35;
+}
+
+.btn-like svg {
+    transition: transform 0.3s ease;
+}
+
+.btn-like:hover svg {
+    transform: scale(1.2);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.1);
+}
+
+.whatsapp-float {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
