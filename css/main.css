@@ -1076,3 +1076,35 @@ footer p {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
 }
+
+.footer-divider {
+  margin: 40px 0 24px;
+  border-color: rgb(253, 85, 35,.9);
+}
+
+.footer-bottom {
+  color: var(--tanspot-white);
+  font-size: 0.875rem;
+}
+
+.footer-bottom-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+
+
+
+.footer-bottom-links a:hover {
+  color: var(--tanspot-white);
+}
+footer .gmt-logo{
+  width: 20%;
+}
+ .GMT{
+ width: 40%;
+ }
